@@ -4,6 +4,28 @@
 .swiper-container { width: 100%; height: 100%; position: absolute; overflow: hidden; left: 0; top: 0; text-align: center; }
 .swiper-wrapper { width: 100%; height: 100%; }
 .swiper-slide { width: 100%; height: 100%; position: relative; overflow: hidden; }
+.bottomBtn{
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    height: 50px;
+    background: #6847EA;
+    width: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "微软雅黑 Regular";
+    /* font-family: zaozigongfangtongxin; */
+}
+.lookover{
+    position: absolute;;
+    bottom: 60px;
+    text-align: center;
+    width: 100%;
+}
+.look{
+    width: 50%;
+}
 #loading { background: rgba(0, 0, 0, .8); position: absolute; width: 100%; height: 100%; z-index: 2 }
 #spinner { position: relative; height: 45px; width: 45px; left: 50%; top: 50%; margin-left: -22px; margin-top: -22px; background: url(../../image/loading.png); background-size: 45px; -webkit-animation: rotate 1.5s linear infinite }
 #protext { position: absolute; top: 50%; left: 50%; -webkit-transform: translate3d(-50%, 40px, 0); font-size: 13px; color: #fff; text-align: center }
@@ -11,9 +33,259 @@
     from { -webkit-transform: rotate(0deg) }
     to { -webkit-transform: rotate(360deg) }
 }
-.btn-down { position: absolute; bottom: 0; width: 100%; height: 7%; text-align: center; top: 93%; }
-.btn-down-arraw img { width: 100% }
-.btn-down-arraw { width: 30px; height: 30px; margin: 0 auto; -webkit-animation: up-fade 1s ease 0s infinite }
+.btn-down { position: absolute; bottom: 0; width: 100%; height: 7%; text-align: center; top: 93%;z-index: 99999}
+/* .btn-down-arraw img { width: 100% }*/
+.btn-down-arraw { width: 60px; height: 60px; margin: 0 auto; -webkit-animation: up-fade 1s ease 0s infinite }
+.btn-down-arraw img { width: 50% }
+.subhead,.subhead2,.subhead3,.subhead4,.subhead5,.subhead6,.subhead7,.subhead8,.subhead9,.subhead10,.subhead11,.sandglass{
+    position: absolute;
+    top: 27%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+.subhead2{
+    top: 28%;
+}
+.subhead3{
+    top: 34%;
+}
+.subhead4{
+    top: 41%;
+}
+.subhead5{
+    top:22%;
+}
+.subhead6{
+    top:58%;
+}
+.subhead7{
+    top:77%;
+}
+.subhead8{
+    top:20%;
+}
+.subhead9{
+    top:40%;
+}
+.subhead10{
+    top:36%;
+}
+.subhead11{
+    top:13%;
+}
+.pageone-text1{
+    font-family: "微软雅黑 Regular";
+    font-size: 19px;
+    color: #fff47f;
+    font-weight: 700;
+    padding: 0px 4px;
+}
+.pageone-text2{
+    font-family: zaozigongfangtongxin;
+    font-size: 23px;
+}
+.pagetwo-text1,.pagetwo-text3,.pagetwo-text4{
+    font-family: "微软雅黑 Regular";
+    font-size: 22px;
+    color: #fff47f;
+    font-weight: 700;
+}
+.pagetwo-text3{
+    font-size: 32px;
+}
+.pagetwo-text4{
+    font-size: 21px;
+}
+.pagetwo-text2{
+    font-family: zaozigongfangtongxin;
+    font-size: 18px;
+    padding: 7px 4px;
+}
+.pagetwo-text5{
+    font-family: zaozigongfangtongxin;
+    font-size: 23px;
+    padding: 7px 4px;
+}
+.sandglass{
+    top: 56%;
+    text-align: center;
+}
+.sandglass>img{
+    width: 40%;
+}
+.date{
+    display: flex;justify-content: center;
+}
+.datebg{
+    width:7%;
+    height:70px;
+    line-height: 80px;
+    background-image:url(../../images/datebg.png);
+    color:#8e76ed;
+    margin: 0px 3px;
+    font-family: zaozigongfangtongxin;
+    font-size: 25px;
+}
+.study,.study2{
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    /* margin-left: 15%; */
+    width: 100%;
+    color: white;
+}
+.study2{
+    top: 71%;
+}
+.gra_7{
+    display: none;
+}
+.examination,.examination2,.examination3,.examination4,.examination5,.examination6,.examination7,.examination8,.examination9,.examination10{
+    position: absolute;
+    top: 24%;
+    left:12%;
+    color: white;
+    font-family: zaozigongfangtongxin;
+    font-size: 20px;
+}
+.examination2{
+    top: 28%;
+}
+.examination3{
+    top: 36%;
+}
+.examination4{
+    top: 40%;
+}
+.examination5{
+    top: 48%;
+}
+.examination6{
+    top: 52%;
+}
+.examination7{
+    top: 60%;
+}
+.examination8{
+    top: 64%;
+}
+.examination9{
+    top: 72%;
+}
+.examination10{
+    top: 76%;
+}
+.examination_text{
+    font-family: "微软雅黑 Regular";
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff47f;
+    padding:0 5px;
+}
+.examination_color{
+    color: #ff8e87;
+}
+.examination_color3{
+    color: #73cdff;
+}
+.examination_color5{
+    color: #f07ee4;
+}
+.examination_color7{
+    color: #8ce577;
+}
+.examination_color9{
+    color: #fff47f;
+}
+.year2017,.ths,.tag,.tag2{
+    position: absolute;
+    top:24%;
+    left:15%;
+    font-family: zaozigongfangtongxin;
+    font-size: 30px;
+    color: #fff47f;
+}
+.ths{
+    top:34%;
+    color: white;
+    font-size: 30px;
+}
+.tag{
+    top:44%;
+    color: white;
+    font-size: 22px;
+}
+.tag2{
+    top:50%;
+    color: white;
+    font-size: 22px;
+}
+.share{
+    position: absolute;
+    top:60%;
+    right:10%;
+}
+.share_btn{
+    width: 60%;
+}
+.shareTip{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    display: none;
+}
+.shareText{
+    position: absolute;
+    top:10px;
+    right: 10px;;
+    width: 50%;
+}
+.shareTipbg{
+    width: 100%;
+    height: 100%;
+}
+.nostudy{
+    position: absolute;
+    top:30%;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    font-family:zaozigongfangtongxin;
+    display: none;
+}
+.noexamination{
+    position: absolute;
+    top:58%;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    font-family:zaozigongfangtongxin;
+    display: none;
+}
+.regretText1,.regretText2{
+    position: absolute;
+    top:38%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-family:zaozigongfangtongxin;
+}
+.regretText2{
+    top:44%;
+    font-size: 28px;
+}
+.canvas{
+    position: absolute;top: 736px;z-index: 9999;left: 0px;
+}
+.music{
+    position: fixed;
+    top:15px;
+    right:15px;
+}
 @-webkit-keyframes up-fade {
     0% { opacity: 1 }
     100% { -webkit-transform: translate3d(0px, -6px, 0); opacity: .5 }
@@ -21,3 +293,12 @@
 .btn { width: 30%; height: 2rem; position: absolute; top: 44%; left: 35%; }
 @media (min-width:415px) {
 	.swiper-container { width: 414px; height: 690px; top: 0; left: 0; right: 0; bottom: 0; margin: auto; } }
+
+
+
+@media screen and (max-width: 320px) {
+    .examination,.examination2,.examination3,.examination4,.examination5,.examination6,.examination7,.examination8,.examination9,.examination10{
+        left:5%;
+        font-size: 18px;
+    }
+}

@@ -1,95 +1,350 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>#互联网创业圈那些不得不跪的事#</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
-    <!-- <link rel="stylesheet" href="src/css/style.css"> -->
-    <link rel="stylesheet" href="dest/css/style.min.css">
-</head>
+  <head>
+      <title>2017我的成长轨迹</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,minimal-ui">
+      <link rel="shortcut icon" href="http://home.9first.com/favicon.ico">
+      <link rel="stylesheet" href="./src/css/style.css">
+      <link rel="stylesheet" href="./src/css/snow.css">
 
-<body>
-	<div id="loading">
-	    <div id="spinner"></div>
-	    <div id="protext">loading</div>
-	</div>
+      <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+      <!-- <bgsound src="./src/music/background.mp3" autoplay=true autostart=true loop="-1">
+      <embed src="./src/music/background.mp3" autostart="true" loop="true" hidden="true"></embed> -->
+      <audio id="yy" autoplay preload src="./src/music/background.mp3" loop></audio>
+
+      <style>
+		body,html{padding:0;margin:0;width:100%;height:100%;;overflow:hidden;}
+
+        @font-face {
+             font-family:'zaozigongfangtongxin';
+              src:url('src/font/font.eot');
+              src:url('src/font/font.eot?#iefix')format('embedded-opentype'),
+               url('src/font/font.woff')format('woff'),
+               url('src/font/font.ttf')format('truetype'),
+               url('../fonts/font.svg#NeuesBauenDemo')format('svg');
+              font-weight:normal;
+              font-style:normal;
+            }
+
+	 </style>
+  </head>
+
+  <body>
 
 	<div class="swiper-container">
-			<img src="./image/share.png" style="position:absolute;z-index:-30;" alt="">
-		<div class="pagination"></div>
-	  <div class="swiper-wrapper">
-	      <div class="swiper-slide gra_1 play">
-	      	<img src="./image/1.jpg">
-	        <div class="btn-down">
-	            <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-	        </div>
-	      </div>
+        <div class="swiper-wrapper">
 
-	      <div class="swiper-slide gra_2">
-	      	<img src="./image/2.jpg" alt="">
-	        <div class="btn-down" style="z-index: 66">
-	            <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-	        </div>
+            <div class="swiper-slide gra_1">
+              <img src="./images/1.png">
+              <div class="btn-down">
+                  <div class="btn-down-arraw"><img src="./images/btn-next.png"></div>
+              </div>
+              <div class="subhead"><span class="pageone-text2">2017</span><span class="pageone-text1" id="name">李吴豪</span><span class="pageone-text2">的成长轨迹</span></div>
+              <div class="lookover">
+                  <img class="look" src="./images/lookover.png" alt="">
+              </div>
+              <div class="bottomBtn" onclick="openApp()">接收我的成长轨迹</div>
+            </div>
 
-	      </div>
+            <div class="swiper-slide gra_7">
+              <img src="./images/6.png" alt="">
+              <div class="regretText1">看样子我们错过了你的2017</div>
+              <div class="regretText2">2018 请让先之学院陪伴你！</div>
+            </div>
 
-	      <div class="swiper-slide gra_3">
-	      	<img src="./image/3.jpg" alt="">
-	      	<div class="btn-down">
-	      	    <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-	      	</div>
-	      </div>
+            <canvas id="canvas" style="position: absolute;top: 736px;z-index: 9999;left: 0px;">
+            </canvas>
+            <div class="swiper-slide gra_2">
+              <img src="./images/2.png" alt="">
+              <div class="subhead8"><span class="pagetwo-text1" id="name2">李吴豪</span><span class="pagetwo-text2">来到先之学院</span><span class="pagetwo-text3" id="days">132天</span></div>
+              <div class="subhead2 pagetwo-text2">TA常学习</div>
+              <div class="subhead3 pagetwo-text4" id="course_type">房务管理、餐饮、康乐、人资</div>
+              <div class="subhead9 pagetwo-text2">方面的课程</div>
+              <div class="sandglass">
+                  <img src="./images/sandglass.png" alt=""/>
+              </div>
+              <div class="btn-down" style="z-index: 66">
+                  <div class="btn-down-arraw"><img src="./images/btn-next.png"></div>
+              </div>
+            </div>
 
-    		<div class="swiper-slide gra_4">
-    			<img src="./image/4.jpg" alt="">
-    			<div class="btn-down">
-    			    <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-    			</div>
-    		</div>
-    		<div class="swiper-slide gra_5">
-    			<img src="./image/5.jpg" alt="">
-    			<div class="btn-down">
-    			    <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-    			</div>
-    		</div>
-    		<div class="swiper-slide gra_6">
-    			<img src="./image/6.jpg" alt="">
-    			<div class="btn-down">
-    			    <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-    			</div>
-    		</div>
-    		<div class="swiper-slide gra_7">
-    			<img src="./image/7.jpg" alt="">
-    			<div class="btn-down">
-    			    <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-    			</div>
-    		</div>
-    		<div class="swiper-slide gra_8">
-    			<img src="./image/8.jpg" alt="">
-    			<div class="btn-down">
-    			    <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-    			</div>
-    		</div>
-    		<div class="swiper-slide gra_9">
-    			<img src="./image/9.jpg" alt="">
-    			<div class="btn-down">
-    			    <div class="btn-down-arraw"><img src="./image/btn-up.png"></div>
-    			</div>
-    		</div>
+            <div class="swiper-slide gra_3">
+              <img src="./images/3.png" alt="">
+              <div class="subhead5">
+                  <div class="date">
+                      <div class="datebg">
+                          <div id="start_time1">2</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="start_time2">0</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="start_time3">1</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="start_time4">7</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="start_time5">1</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="start_time6">2</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="start_time7">1</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="start_time8">2</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="study"><span class="pagetwo-text1" id="name3">李吴豪</span><span class="pagetwo-text2">学习了第一门课程</span></div>
+              <div class="subhead4 pagetwo-text1" id="title">《酒店培训管理》</div>
 
-	      <div class="swiper-slide gra_10">
-	      	<div class="btn" data-target="http://www.dreamore.com/projects/18384.html"></div>
-	      	<link rel="stylesheet" href="src/css/style.css">
-	      	<img src="./image/10.jpg" alt="">
-	      </div>
-	  </div>
-	</div>
-<!-- <script  src="./src/js/jquery-2.1.1.min.js"></script>
-<script  src="./src/js/idangerous.swiper.min.js"></script>
-<script src="./src/js/hammer.js"></script>
-<script src="./src/js/jquery.hammer.js"></script>
-<script src="./src/js/my.js"></script> -->
-<!-- <script src="./dest/js/libs.min.js"></script> -->
-</body>
-</html>
+
+             <div class="noexamination" id="noexamination">很可惜 <span id="name4"></span> 还没参加考试测评</div>
+
+              <div class="subhead6" id="examination">
+                  <div class="date">
+                      <div class="datebg">
+                          <div id="add_time1">2</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="add_time2">0</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="add_time3">1</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="add_time4">7</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="add_time5">1</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="add_time6">2</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="add_time7">1</div>
+                      </div>
+                      <div class="datebg">
+                          <div id="add_time8">2</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="study2" id="first"><span class="pagetwo-text1" id="name5">李吴豪</span><span class="pagetwo-text2">完成了第一门课程</span></div>
+              <div class="subhead7 pagetwo-text1" id="test_name">《酒店培训管理》</div>
+
+              <div class="btn-down">
+                  <div class="btn-down-arraw"><img src="./images/btn-next.png"></div>
+              </div>
+            </div>
+
+            <div class="swiper-slide gra_4">
+              <img src="./images/4.png" alt="">
+              <div class="subhead8"><span class="pagetwo-text1" id="name6">李吴豪</span><span class="pagetwo-text2">课程累积时长全站排名</span></div>
+              <div class="subhead2"><span class="pagetwo-text2">第</span><span class="pagetwo-text1" id="rank">234</span><span class="pagetwo-text2">名</span></div>
+              <div class="subhead10"><span class="pagetwo-text2">超过了全站</span><span class="pagetwo-text1" id="percent">80%</span><span class="pagetwo-text2">的人</span></div>
+
+              <div class="btn-down">
+                  <div class="btn-down-arraw"><img src="./images/btn-next.png"></div>
+              </div>
+              <div class="snow-container">
+          			<div class="snow foreground"></div>
+          			<div class="snow foreground layered"></div>
+          			<div class="snow middleground"></div>
+          			<div class="snow middleground layered"></div>
+          			<div class="snow background"></div>
+          			<div class="snow background layered"></div>
+          	</div>
+            </div>
+
+            <div class="swiper-slide gra_5">
+              <img src="./images/5.png" alt="">
+              <div class="subhead11"><span class="pagetwo-text1" id="name7">李吴豪</span><span class="pagetwo-text5">的实力展现</span></div>
+              <div class="examination examination_color">考试达人</div>
+              <div class="examination2"><span>参加了</span><span class="examination_text" id="num"></span><span>考试</span>  <span id="maxscore">最高得分</span> <span class="examination_text" id="score"></span></div>
+              <div class="examination3 examination_color3">制作能手</div>
+              <div class="examination4"><span>自学上传了</span><span class="examination_text" id="doc_num"></span><span>文档</span></div>
+              <div class="examination5 examination_color5">计划专家</div>
+              <div class="examination6"><span>季度最高计划</span><span class="examination_text" id="plan_course_num"></span><span>课程</span></div>
+              <div class="examination7 examination_color7">缔造专家</div>
+              <div class="examination8"><span>参加了</span><span class="examination_text" id="paper_num"></span><span>问卷</span>  <span id="answer">回答了</span> <span class="examination_text" id="paper_question_num"></span> <span id="question">题目</span></div>
+              <div class="examination9 examination_color9">超级学着</div>
+              <div class="examination10"><span>全年学习了</span><span class="examination_text" id="course_num"></span><span>课程</span></div>
+
+              <div class="btn-down">
+                  <div class="btn-down-arraw"><img src="./images/btn-next.png"></div>
+              </div>
+            </div>
+
+            <div class="swiper-slide gra_6">
+              <img src="./images/6.png" alt="">
+              <div class="year2017">2017</div>
+              <div class="ths">先之学院感谢有你!</div>
+              <div class="tag">时光易逝</div>
+              <div class="tag2">而你始终独一无二</div>
+              <div class="share" onclick="shareFriends()">
+                  <img class="share_btn" src="./images/share.png" alt=""/>
+              </div>
+              <div class="shareTip" onclick="closeShare()">
+                  <img src="./images/shareBg.png" class="shareTipbg" />
+              </div>
+
+              <!-- <div class="btn-down">
+                  <div class="btn-down-arraw"><img src="./images/btn-next.png"></div>
+              </div> -->
+            </div>
+
+        </div>
+
+        <div class="music" onclick="suspendPlayAudio()">
+            <img class="music-icon" src="./images/music.png"/>
+        </div>
+    <!-- ga统计代码 -->
+    <!-- <script src="http://static.xz.veimg.cn/js/plus/2013/ga.js"></script> -->
+    <script src="./src/js/lms.js"></script>
+    <script src="./dest/js/libs.min.js"></script>
+    <!-- <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+
+        function renderPage(data){
+            if(data.hours == "2000"){
+                $(".gra_7").css({ display: 'block' });
+                $("#canvas").remove();
+                $(".gra_2").remove();
+                $(".gra_3").remove();
+                $(".gra_4").remove();
+                $(".gra_5").remove();
+                $(".gra_6").remove();
+                // document.body.heght = screen.height*2;
+                $(document.body).css({
+                  "overflow-x":"hidden",
+                  "overflow-y":"hidden"
+                });
+            }else {
+
+             var name = data.name;
+             if(name.length>3){
+                 name = data.name.substr(0,3)+'...';
+             }
+            document.getElementById('name').innerHTML = name;
+            document.getElementById('name2').innerHTML = name;
+            document.getElementById('name3').innerHTML = name;
+            document.getElementById('name4').innerHTML = name;
+            document.getElementById('name5').innerHTML = name;
+            document.getElementById('name6').innerHTML = name;
+            document.getElementById('name7').innerHTML = name;
+
+           document.getElementById('days').innerHTML = data.days+'天';
+           document.getElementById('course_type').innerHTML = data.course_type;
+
+            document.getElementById('start_time1').innerHTML = data.course_info.start_time.substr(0,1);
+            document.getElementById('start_time2').innerHTML = data.course_info.start_time.substr(1,1);
+            document.getElementById('start_time3').innerHTML = data.course_info.start_time.substr(2,1);
+            document.getElementById('start_time4').innerHTML = data.course_info.start_time.substr(3,1);
+            document.getElementById('start_time5').innerHTML = data.course_info.start_time.substr(5,1);
+            document.getElementById('start_time6').innerHTML = data.course_info.start_time.substr(6,1);
+            document.getElementById('start_time7').innerHTML = data.course_info.start_time.substr(8,1);
+            document.getElementById('start_time8').innerHTML = data.course_info.start_time.substr(9,1);
+            document.getElementById('title').innerHTML = data.course_info.title;
+
+            if(data.exam_info.test_name == ""){
+                // document.getElementById('noexamination').css({display:'block'});
+                // document.getElementById('examination').css({display:'none'});
+                $("#noexamination").css({ display: 'block' });
+                $("#examination").css({ display: 'none' });
+                $("#first").css({ display: 'none' });
+                $("#test_name").css({ display: 'none' });
+            }else{
+                document.getElementById('add_time1').innerHTML = data.exam_info.add_time.substr(0,1);
+                document.getElementById('add_time2').innerHTML = data.exam_info.add_time.substr(1,1);
+                document.getElementById('add_time3').innerHTML = data.exam_info.add_time.substr(2,1);
+                document.getElementById('add_time4').innerHTML = data.exam_info.add_time.substr(3,1);
+                document.getElementById('add_time5').innerHTML = data.exam_info.add_time.substr(5,1);
+                document.getElementById('add_time6').innerHTML = data.exam_info.add_time.substr(6,1);
+                document.getElementById('add_time7').innerHTML = data.exam_info.add_time.substr(8,1);
+                document.getElementById('add_time8').innerHTML = data.exam_info.add_time.substr(9,1);
+                document.getElementById('test_name').innerHTML = data.exam_info.test_name;
+            }
+
+            document.getElementById('rank').innerHTML = data.rank;
+            document.getElementById('percent').innerHTML = data.percent+'%';
+
+            document.getElementById('num').innerHTML = data.test_count.num+'门';
+            if(data.test_count.num == 0){
+                $("#maxscore").css({ display: 'none' });
+                $("#score").css({ display: 'none' });
+            }else {
+                document.getElementById('score').innerHTML = data.test_count.score+'分';
+            }
+
+            document.getElementById('doc_num').innerHTML = data.percent+'份';
+            document.getElementById('plan_course_num').innerHTML = data.plan_course_num+'个';
+
+            document.getElementById('paper_num').innerHTML = data.paper_num+'份';
+            if(data.paper_num == 0){
+                $("#answer").css({ display: 'none' });
+                $("#paper_question_num").css({ display: 'none' });
+                $("#paper_question_num").css({ display: 'none' });
+                $("#question").css({ display: 'none' });
+            }else {
+                document.getElementById('paper_question_num').innerHTML = data.paper_question_num+'道';
+            }
+
+            document.getElementById('course_num').innerHTML = data.percent+'门';
+        }
+        }
+
+        function getData(url){
+            $.ajax({
+                async: false,
+                type: "GET",
+                url: url,
+                dataType: "jsonp",
+                success: function(data){
+                    var status = data.status;
+                    if (status) {
+                        renderPage(data.data);
+                    }
+                },
+                error: function () {
+                    console.log('error');
+                }
+            });
+        }
+       getData("http://lms_api_v2.9first.com/client3/normal/activityUser");
+
+
+       var bjyy=document.getElementById("yy");
+       var flag = true;
+
+        function autoPlayAudio(){
+            wx.config({
+                debug: false
+            });
+            wx.ready(function() {
+                bjyy.play();
+            });
+        }
+
+        function suspendPlayAudio(){
+            if(flag){
+                bjyy.pause();
+                $('.music-icon').attr("src",'./images/music_stop.png');
+                flag = false;
+            }else {
+                bjyy.play();
+                $('.music-icon').attr("src",'./images/music.png');
+                flag = true;
+            }
+        }
+
+        autoPlayAudio();
+
+    </script>
+  </body>
+  </html>
